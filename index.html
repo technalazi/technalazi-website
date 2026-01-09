@@ -1,122 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TechnalAzi | Policy-Aligned Platform Support</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Policy-aligned recovery, monetization and compliance support for Facebook, Instagram, YouTube and Google.">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>TechnalAzi — Policy-Aligned Platform Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Policy-aligned recovery & monetization consulting for Facebook, Instagram, YouTube & Google." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <div class="logo">TechnalAzi</div>
-    <a href="#contact" class="btn primary small">Free Eligibility Check</a>
+<header class="hero">
+  <img src="logo.png" alt="TechnalAzi Logo" class="logo" />
+
+  <h1>
+    Policy-Aligned Recovery & Monetization Support
+    <span>for Facebook, Instagram, YouTube & Google</span>
+  </h1>
+
+  <p class="hero-text">
+    Ethical consulting for creators & businesses facing monetization loss,
+    access restrictions, verification delays, and account limitations.
+  </p>
+
+  <blockquote>
+    “If an issue is not fixable within platform policies,
+    you’ll be informed honestly before any payment.”
+  </blockquote>
+
+  <a href="#contact" class="main-cta">
+    🔍 Request Eligibility Review
+  </a>
+
+  <div class="trust-line">
+    🛡️ No hacks • 📜 Policy-aligned • 💵 USD billing
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>
-      Policy-Aligned Recovery & Monetization Support<br>
-      <span>for Facebook, Instagram, YouTube & Google</span>
-    </h1>
+<section class="services">
+  <h2>What We Do</h2>
 
-    <p class="sub">
-      Ethical, policy-aligned consulting for creators and businesses facing
-      monetization loss, access restrictions, verification delays and account limitations.
-    </p>
-
-    <blockquote>
-      “If an issue is not fixable within platform policies,
-      I will tell you honestly before taking any payment.”
-    </blockquote>
-
-    <div class="cta">
-      <a href="#contact" class="btn primary">Request Free Eligibility Check</a>
-      <a href="#services" class="btn outline">Check If Your Issue Is Fixable</a>
-    </div>
-
-    <div class="trust">
-      <span>✔ No hacks</span>
-      <span>✔ No fake documents</span>
-      <span>✔ Policy-aligned</span>
-      <span>✔ USD billing</span>
-    </div>
+  <div class="service-grid">
+    <div class="card">🛡️ Account Safety & Compliance</div>
+    <div class="card">📘 Policy Education</div>
+    <div class="card">💰 Monetization Best Practices</div>
+    <div class="card">⚠️ Content Risk Review</div>
+    <div class="card">🌱 Sustainable Growth</div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" class="section light">
-  <div class="container">
-    <h2>What We Do</h2>
+<section id="contact" class="contact">
+  <h2>📩 Contact & Eligibility Review</h2>
 
-    <div class="grid">
-      <div class="card">Account Safety & Compliance</div>
-      <div class="card">Policy Education</div>
-      <div class="card">Monetization Best Practices</div>
-      <div class="card">Content Risk Review</div>
-      <div class="card">Sustainable Growth</div>
-    </div>
-  </div>
+  <p>
+    Describe your issue clearly.  
+    If it’s not eligible under platform policies,
+    you’ll be informed before any payment.
+  </p>
+
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    action="/thankyou.html"
+  >
+    <input type="hidden" name="form-name" value="contact" />
+
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea
+      name="message"
+      placeholder="Describe your issue (no passwords or codes)"
+      required
+    ></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <small>
+    🔒 Transparency Notice: We never request passwords,
+    verification codes, or private access.
+  </small>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section dark">
-  <div class="container narrow">
-    <h2>Contact & Eligibility Check</h2>
-
-    <p>
-      Describe your issue clearly. If it is not eligible under platform policies,
-      you will be informed before any payment.
-    </p>
-
-    <!-- NETLIFY FORM -->
-    <form name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          action="/thankyou.html">
-
-      <input type="hidden" name="form-name" value="contact">
-
-      <p style="display:none;">
-        <label>
-          Don’t fill this out: <input name="bot-field">
-        </label>
-      </p>
-
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-
-      <textarea name="message"
-                placeholder="Describe your issue clearly (no passwords or codes)"
-                rows="5"
-                required></textarea>
-
-      <button type="submit" class="btn primary">
-        Send Message
-      </button>
-    </form>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <p>
-      Transparency Notice: We do not request passwords, verification codes, or private access.
-    </p>
-    <p>
-      © 2026 TechnalAzi ·
-      <a href="privacy.html">Privacy Policy</a> ·
-      <a href="terms.html">Terms & Conditions</a>
-    </p>
-  </div>
+<footer>
+  © 2026 TechnalAzi •
+  <a href="/privacy.html">Privacy Policy</a> •
+  <a href="/terms.html">Terms & Conditions</a>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
