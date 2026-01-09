@@ -1,251 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TechnalAzi – Ethical Digital Platform Consulting</title>
-
-<meta name="description" content="Ethical, policy-aligned digital platform consulting and compliance guidance for creators and businesses.">
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
-<!-- SEO Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "TechnalAzi",
-  "url": "https://technalazi.netlify.app",
-  "logo": "https://technalazi.netlify.app/logo.png",
-  "description": "Ethical, policy-aligned digital platform consulting and compliance guidance for creators and businesses.",
-  "email": "contact.technalazi@gmail.com",
-  "sameAs": [
-    "https://www.facebook.com/technalazi"
-  ]
-}
-</script>
-
-<style>
-:root{
-  --blue:#1e3a8a;
-  --green:#22c55e;
-  --bg:#f8fbff;
-  --card:#ffffff;
-  --text:#0f172a;
-  --muted:#475569;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:'Poppins',sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.7;
-}
-header{padding:120px 20px}
-.hero-box{
-  max-width:760px;
-  margin:auto;
-  padding:42px 34px 50px;
-  background:#fff;
-  border-radius:28px;
-  border:1px solid rgba(30,58,138,.15);
-  box-shadow:0 30px 70px rgba(0,0,0,.08);
-}
-.hero-logo{text-align:center;padding-bottom:26px;border-bottom:1px dashed rgba(0,0,0,.15);margin-bottom:28px}
-.hero-logo img{width:120px}
-.hero-brand{text-align:center}
-.brand-name{font-size:2.9rem;font-weight:700;margin-bottom:10px}
-.technal{color:var(--blue)}
-.azi{color:var(--green)}
-.tagline{font-size:1.05rem;font-weight:500;color:var(--muted);margin-bottom:26px}
-.hero-brand p{max-width:640px;margin:0 auto 34px;color:var(--muted)}
-.btn{
-  display:inline-block;
-  padding:15px 40px;
-  background:linear-gradient(135deg,var(--blue),var(--green));
-  color:#fff;
-  border-radius:50px;
-  font-weight:600;
-  text-decoration:none;
-  box-shadow:0 12px 30px rgba(0,0,0,.18);
-  border:none;
-  cursor:pointer;
-}
-section{padding:80px 20px;max-width:1100px;margin:auto}
-h2{text-align:center;font-size:2.2rem;margin-bottom:46px;color:var(--blue)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px}
-.card{
-  background:var(--card);
-  padding:32px;
-  border-radius:22px;
-  box-shadow:0 20px 45px rgba(0,0,0,.06);
-  transition:.3s;
-}
-.card:hover{transform:translateY(-6px)}
-.card i{font-size:30px;color:var(--green);margin-bottom:14px}
-.faq{max-width:860px;margin:auto}
-.faq details{
-  background:var(--card);
-  padding:22px;
-  border-radius:18px;
-  margin-bottom:16px;
-  box-shadow:0 8px 20px rgba(0,0,0,.05);
-}
-.faq summary{font-weight:600;cursor:pointer}
-.faq p{margin-top:10px;color:var(--muted)}
-.contact-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
-.contact-box{
-  background:var(--card);
-  border-radius:22px;
-  padding:32px;
-  box-shadow:0 20px 45px rgba(0,0,0,.08);
-}
-.contact-links a{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  padding:14px 18px;
-  margin-bottom:15px;
-  background:#f8fafc;
-  border-radius:14px;
-  color:var(--text);
-  text-decoration:none;
-}
-.contact-links i{font-size:22px;color:var(--blue)}
-form input, form textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:15px;
-  border-radius:12px;
-  border:1px solid #e2e8f0;
-  font-family:inherit;
-}
-form textarea{min-height:120px;resize:none}
-footer{
-  background:#2b2b2b;
-  color:#fff;
-  text-align:center;
-  padding:46px 20px;
-  font-size:.9rem;
-}
-footer a{color:#fff;text-decoration:underline}
-.floating{
-  position:fixed;
-  bottom:90px;
-  right:18px;
-  background:#25D366;
-  color:#fff;
-  width:56px;
-  height:56px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:50%;
-  font-size:26px;
-  box-shadow:0 12px 28px rgba(0,0,0,.25);
-  text-decoration:none;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>TechnalAzi | Policy-Aligned Platform Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Policy-aligned recovery, monetization and compliance support for Facebook, Instagram, YouTube and Google.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <div class="hero-box">
-    <div class="hero-logo">
-      <img src="logo.png" alt="TechnalAzi Shield Logo">
-    </div>
-
-    <div class="hero-brand">
-      <div class="brand-name">
-        <span class="technal">Technal</span><span class="azi">Azi</span>
-      </div>
-      <div class="tagline">Expert Platform Support & Guidance</div>
-      <p>
-        Ethical, policy-aligned digital platform consulting & compliance guidance
-        for creators and businesses who value long-term safety.
-      </p>
-      <a href="#contact" class="btn">Start a Consultation</a>
-    </div>
+<header class="header">
+  <div class="container nav">
+    <div class="logo">TechnalAzi</div>
+    <a href="#contact" class="btn primary small">Free Eligibility Check</a>
   </div>
 </header>
 
-<section>
-<h2>What We Do</h2>
-<div class="grid">
-  <div class="card"><i class="fa-solid fa-shield-halved"></i><h3>Account Safety & Compliance</h3><p>Protect accounts from enforcement risks.</p></div>
-  <div class="card"><i class="fa-solid fa-book-open"></i><h3>Policy Education</h3><p>Clear understanding of platform rules.</p></div>
-  <div class="card"><i class="fa-solid fa-coins"></i><h3>Monetization Best Practices</h3><p>Ethical monetization guidance.</p></div>
-  <div class="card"><i class="fa-solid fa-triangle-exclamation"></i><h3>Content Risk Review</h3><p>Identify risks before publishing.</p></div>
-  <div class="card"><i class="fa-solid fa-seedling"></i><h3>Sustainable Growth</h3><p>Long-term trust-based growth.</p></div>
-</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>
+      Policy-Aligned Recovery & Monetization Support<br>
+      <span>for Facebook, Instagram, YouTube & Google</span>
+    </h1>
+
+    <p class="sub">
+      Ethical, policy-aligned consulting for creators and businesses facing
+      monetization loss, access restrictions, verification delays and account limitations.
+    </p>
+
+    <blockquote>
+      “If an issue is not fixable within platform policies,
+      I will tell you honestly before taking any payment.”
+    </blockquote>
+
+    <div class="cta">
+      <a href="#contact" class="btn primary">Request Free Eligibility Check</a>
+      <a href="#services" class="btn outline">Check If Your Issue Is Fixable</a>
+    </div>
+
+    <div class="trust">
+      <span>✔ No hacks</span>
+      <span>✔ No fake documents</span>
+      <span>✔ Policy-aligned</span>
+      <span>✔ USD billing</span>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Frequently Asked Questions</h2>
-<div class="faq">
-  <details><summary>Do you ask for passwords?</summary><p>No. Never.</p></details>
-  <details><summary>Do you guarantee results?</summary><p>No. Guidance only.</p></details>
-  <details><summary>Are you affiliated with platforms?</summary><p>No. Independent service.</p></details>
-  <details><summary>Do you bypass systems?</summary><p>No. Ethical practices only.</p></details>
-  <details><summary>Is this business-safe?</summary><p>Yes.</p></details>
-  <details><summary>Who can use this?</summary><p>Creators & businesses.</p></details>
-  <details><summary>How to contact you?</summary><p>Email, WhatsApp, Facebook.</p></details>
-</div>
+<!-- SERVICES -->
+<section id="services" class="section light">
+  <div class="container">
+    <h2>What We Do</h2>
+
+    <div class="grid">
+      <div class="card">Account Safety & Compliance</div>
+      <div class="card">Policy Education</div>
+      <div class="card">Monetization Best Practices</div>
+      <div class="card">Content Risk Review</div>
+      <div class="card">Sustainable Growth</div>
+    </div>
+  </div>
 </section>
 
-<section id="contact">
-<h2>Contact Us</h2>
-<div class="contact-wrap">
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <div class="container narrow">
+    <h2>Contact & Eligibility Check</h2>
 
-<div class="contact-box contact-links">
-  <a href="mailto:contact.technalazi@gmail.com"><i class="fa-solid fa-envelope"></i> contact.technalazi@gmail.com</a>
-  <a href="https://wa.me/8801770209663" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp Consultation</a>
-  <a href="https://facebook.com/technalazi" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook Page</a>
-</div>
+    <p>
+      Describe your issue clearly. If it is not eligible under platform policies,
+      you will be informed before any payment.
+    </p>
 
-<div class="contact-box">
-<form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  action="/thankyou.html"
->
-  <input type="hidden" name="form-name" value="contact" />
+    <!-- NETLIFY FORM -->
+    <form name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/thankyou.html">
 
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Describe your issue clearly" required></textarea>
+      <input type="hidden" name="form-name" value="contact">
 
-  <button class="btn" type="submit">Send Message</button>
-</form>
-</div>
+      <p style="display:none;">
+        <label>
+          Don’t fill this out: <input name="bot-field">
+        </label>
+      </p>
 
-</div>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message"
+                placeholder="Describe your issue clearly (no passwords or codes)"
+                rows="5"
+                required></textarea>
+
+      <button type="submit" class="btn primary">
+        Send Message
+      </button>
+    </form>
+
+  </div>
 </section>
 
-<!-- Netlify hidden fallback form -->
-<form name="contact" data-netlify="true" hidden>
-  <input type="text" name="name">
-  <input type="email" name="email">
-  <textarea name="message"></textarea>
-</form>
-
-<footer>
-<p>
-Transparency Notice: We do not request passwords, verification codes, or private access.<br>
-© 2026 TechnalAzi • <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms & Conditions</a>
-</p>
+<footer class="footer">
+  <div class="container">
+    <p>
+      Transparency Notice: We do not request passwords, verification codes, or private access.
+    </p>
+    <p>
+      © 2026 TechnalAzi ·
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms & Conditions</a>
+    </p>
+  </div>
 </footer>
 
-<a class="floating" href="https://wa.me/8801770209663" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-
+<script src="script.js"></script>
 </body>
 </html>
