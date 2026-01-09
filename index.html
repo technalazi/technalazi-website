@@ -21,7 +21,7 @@ p{line-height:1.6;color:#475569;}
     padding:14px 28px;
     background:#22c55e;
     color:#fff;
-    border-radius:8px;
+    border-radius:30px;
     text-decoration:none;
     font-weight:600;
 }
@@ -39,7 +39,7 @@ p{line-height:1.6;color:#475569;}
 .card{
     background:#fff;
     padding:22px;
-    border-radius:12px;
+    border-radius:14px;
     box-shadow:0 10px 30px rgba(0,0,0,.05);
 }
 .dark{
@@ -47,19 +47,6 @@ p{line-height:1.6;color:#475569;}
     color:#fff;
 }
 .dark p{color:#cbd5f5;}
-.form-box{
-    background:#0f172a;
-    padding:30px;
-    border-radius:14px;
-}
-input,textarea{
-    width:100%;
-    padding:14px;
-    margin-bottom:14px;
-    border-radius:8px;
-    border:none;
-}
-textarea{min-height:120px;}
 footer{
     background:#020617;
     color:#94a3b8;
@@ -68,6 +55,14 @@ footer{
     font-size:14px;
 }
 .badge{font-size:14px;color:#22c55e;font-weight:600;}
+input,textarea{
+    width:100%;
+    padding:14px;
+    border-radius:10px;
+    border:1px solid #e5e7eb;
+    margin-bottom:14px;
+}
+textarea{min-height:120px;}
 </style>
 </head>
 
@@ -76,7 +71,15 @@ footer{
 <!-- HERO -->
 <section class="hero">
 <div class="container">
-<img src="logo.png" alt="TechnalAzi Logo" style="max-width:90px;margin-bottom:20px;">
+
+<!-- LOGO + NAME -->
+<div style="display:flex;flex-direction:column;align-items:center;gap:10px;margin-bottom:20px;">
+  <img src="logo.png" alt="TechnalAzi Logo" style="width:140px;height:auto;">
+  <h2 style="margin:0;font-size:28px;font-weight:700;letter-spacing:1px;color:#ffffff;">
+    TechnalAzi
+  </h2>
+</div>
+
 <h1>Policy-Aligned Recovery & Monetization Support</h1>
 <p>For Facebook, Instagram, YouTube & Google</p>
 <p>Ethical consulting for creators & businesses facing monetization loss, access restrictions, verification delays, and account limitations.</p>
@@ -85,6 +88,7 @@ footer{
 <a href="#contact" class="btn">Request Eligibility Review</a>
 <p class="badge">⏱ Typical response time: 24–48 hours</p>
 <p>🔒 No hacks • 📜 Policy-aligned • 💵 USD billing</p>
+
 </div>
 </section>
 
@@ -102,7 +106,7 @@ footer{
 </div>
 </section>
 
-<!-- WHY CHOOSE -->
+<!-- WHY -->
 <section>
 <div class="container">
 <h2>Why TechnalAzi</h2>
@@ -155,18 +159,42 @@ footer{
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="dark">
+<section id="contact" style="background:#f4f7fb;">
 <div class="container">
-<h2>Contact & Eligibility Review</h2>
-<p>Describe your issue clearly. If it’s not eligible under platform policies, you’ll be informed before any payment.</p>
-<div class="form-box">
+<h2 style="text-align:center;margin-bottom:40px;">Contact Us</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;">
+
+<!-- LEFT -->
+<div class="card">
+<p><strong>📧 Email</strong><br>
+<a href="mailto:contact.technalazi@gmail.com">contact.technalazi@gmail.com</a></p>
+
+<p><strong>💬 WhatsApp Consultation</strong><br>
+<a href="https://wa.me/8801770209663" target="_blank"
+style="display:inline-block;margin-top:8px;padding:10px 18px;background:#25D366;color:#fff;border-radius:30px;text-decoration:none;font-weight:600;">
+Chat on WhatsApp
+</a></p>
+
+<p><strong>📘 Facebook Page</strong><br>
+<a href="https://www.facebook.com/technalazi" target="_blank">
+facebook.com/technalazi
+</a></p>
+</div>
+
+<!-- RIGHT -->
+<div class="card">
 <form>
 <input type="text" placeholder="Your Name" required>
 <input type="email" placeholder="Your Email" required>
 <textarea placeholder="Briefly describe your issue (platform + page/channel link + problem)"></textarea>
-<button class="btn" type="submit">Send Message</button>
+<button class="btn" type="submit" style="width:100%;">Send Message</button>
 </form>
-<p style="font-size:13px;">🔐 Transparency Notice: We never request passwords, verification codes, or private access.</p>
+<p style="font-size:13px;margin-top:12px;color:#64748b;">
+🔐 We never request passwords, verification codes, or private access.
+</p>
+</div>
+
 </div>
 </div>
 </section>
