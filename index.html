@@ -1,92 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>TechnalAzi — Policy-Aligned Platform Support</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Policy-aligned recovery & monetization consulting for Facebook, Instagram, YouTube & Google." />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TechnalAzi | Policy-Aligned Platform Consulting</title>
+
+<style>
+body{
+    margin:0;
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+    background:#f4f7fb;
+    color:#1e293b;
+}
+section{padding:60px 20px;}
+.container{max-width:1100px;margin:auto;}
+h1,h2,h3{margin-bottom:12px;}
+p{line-height:1.6;color:#475569;}
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#22c55e;
+    color:#fff;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+}
+.hero{
+    background:linear-gradient(135deg,#0f172a,#020617);
+    color:#fff;
+    text-align:center;
+}
+.hero p{color:#cbd5f5;}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+.card{
+    background:#fff;
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+.dark{
+    background:#020617;
+    color:#fff;
+}
+.dark p{color:#cbd5f5;}
+.form-box{
+    background:#0f172a;
+    padding:30px;
+    border-radius:14px;
+}
+input,textarea{
+    width:100%;
+    padding:14px;
+    margin-bottom:14px;
+    border-radius:8px;
+    border:none;
+}
+textarea{min-height:120px;}
+footer{
+    background:#020617;
+    color:#94a3b8;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+.badge{font-size:14px;color:#22c55e;font-weight:600;}
+</style>
 </head>
 
 <body>
 
-<header class="hero">
-  <img src="logo.png" alt="TechnalAzi Logo" class="logo" />
-
-  <h1>
-    Policy-Aligned Recovery & Monetization Support
-    <span>for Facebook, Instagram, YouTube & Google</span>
-  </h1>
-
-  <p class="hero-text">
-    Ethical consulting for creators & businesses facing monetization loss,
-    access restrictions, verification delays, and account limitations.
-  </p>
-
-  <blockquote>
-    “If an issue is not fixable within platform policies,
-    you’ll be informed honestly before any payment.”
-  </blockquote>
-
-  <a href="#contact" class="main-cta">
-    🔍 Request Eligibility Review
-  </a>
-
-  <div class="trust-line">
-    🛡️ No hacks • 📜 Policy-aligned • 💵 USD billing
-  </div>
-</header>
-
-<section class="services">
-  <h2>What We Do</h2>
-
-  <div class="service-grid">
-    <div class="card">🛡️ Account Safety & Compliance</div>
-    <div class="card">📘 Policy Education</div>
-    <div class="card">💰 Monetization Best Practices</div>
-    <div class="card">⚠️ Content Risk Review</div>
-    <div class="card">🌱 Sustainable Growth</div>
-  </div>
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<img src="logo.png" alt="TechnalAzi Logo" style="max-width:90px;margin-bottom:20px;">
+<h1>Policy-Aligned Recovery & Monetization Support</h1>
+<p>For Facebook, Instagram, YouTube & Google</p>
+<p>Ethical consulting for creators & businesses facing monetization loss, access restrictions, verification delays, and account limitations.</p>
+<p><em>“If an issue is not fixable within platform policies, you’ll be informed honestly before any payment.”</em></p>
+<br>
+<a href="#contact" class="btn">Request Eligibility Review</a>
+<p class="badge">⏱ Typical response time: 24–48 hours</p>
+<p>🔒 No hacks • 📜 Policy-aligned • 💵 USD billing</p>
+</div>
 </section>
 
-<section id="contact" class="contact">
-  <h2>📩 Contact & Eligibility Review</h2>
-
-  <p>
-    Describe your issue clearly.  
-    If it’s not eligible under platform policies,
-    you’ll be informed before any payment.
-  </p>
-
-  <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    action="/thankyou.html"
-  >
-    <input type="hidden" name="form-name" value="contact" />
-
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea
-      name="message"
-      placeholder="Describe your issue (no passwords or codes)"
-      required
-    ></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-  <small>
-    🔒 Transparency Notice: We never request passwords,
-    verification codes, or private access.
-  </small>
+<!-- WHAT WE DO -->
+<section>
+<div class="container">
+<h2>What We Do</h2>
+<div class="cards">
+<div class="card">🛡 Account Safety & Compliance</div>
+<div class="card">📘 Policy Education</div>
+<div class="card">💰 Monetization Best Practices</div>
+<div class="card">⚠ Content Risk Review</div>
+<div class="card">🌱 Sustainable Growth Guidance</div>
+</div>
+</div>
 </section>
 
+<!-- WHY CHOOSE -->
+<section>
+<div class="container">
+<h2>Why TechnalAzi</h2>
+<div class="cards">
+<div class="card">🔐 Policy-First Approach</div>
+<div class="card">🧠 Experience-Based Guidance</div>
+<div class="card">🧾 Transparency Promise</div>
+<div class="card">🌍 Global Platform Understanding</div>
+<div class="card">🛑 We never request passwords or codes</div>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="dark">
+<div class="container">
+<h2>How Our Review Process Works</h2>
+<p>1️⃣ Eligibility Review – Submit your issue with basic details only.</p>
+<p>2️⃣ Policy Evaluation – We assess strictly under official platform rules.</p>
+<p>3️⃣ Honest Outcome – You’re informed clearly if the issue is not eligible.</p>
+<p>4️⃣ Guided Support – Eligible cases receive structured, ethical guidance.</p>
+</div>
+</section>
+
+<!-- WHO FOR -->
+<section>
+<div class="container">
+<h2>Who This Service Is For</h2>
+<div class="cards">
+<div class="card">
+<strong>✅ This service is for:</strong>
+<ul>
+<li>Creators facing monetization restrictions</li>
+<li>Businesses delayed in verification</li>
+<li>Pages affected by policy misunderstandings</li>
+<li>Users seeking long-term ethical solutions</li>
+</ul>
+</div>
+<div class="card">
+<strong>❌ This service is NOT for:</strong>
+<ul>
+<li>Hacks or shortcuts</li>
+<li>Fake documents or bypass requests</li>
+<li>Guaranteed or instant approvals</li>
+<li>Unauthorized platform access</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="dark">
+<div class="container">
+<h2>Contact & Eligibility Review</h2>
+<p>Describe your issue clearly. If it’s not eligible under platform policies, you’ll be informed before any payment.</p>
+<div class="form-box">
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Briefly describe your issue (platform + page/channel link + problem)"></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+<p style="font-size:13px;">🔐 Transparency Notice: We never request passwords, verification codes, or private access.</p>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section>
+<div class="container">
+<h2>Frequently Asked Questions</h2>
+<p><strong>Do you guarantee recovery?</strong><br>No. Platform decisions are controlled solely by the platforms.</p>
+<p><strong>Do you need login details?</strong><br>Never.</p>
+<p><strong>How long does a review take?</strong><br>Usually 24–48 hours.</p>
+<p><strong>What platforms are supported?</strong><br>Facebook, Instagram, YouTube & Google.</p>
+<p><strong>Is my data safe?</strong><br>Yes. Only basic contact info is collected.</p>
+</div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  © 2026 TechnalAzi •
-  <a href="/privacy.html">Privacy Policy</a> •
-  <a href="/terms.html">Terms & Conditions</a>
+© 2026 TechnalAzi • Privacy Policy • Terms & Conditions  
+<br>
+Independent consulting service. Not affiliated with Meta, Google, or YouTube.
 </footer>
 
 </body>
