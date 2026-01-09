@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://technalazi.netlify.app/sitemap.xml
+Host: technalazi.netlify.app
