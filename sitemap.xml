@@ -1,6 +1,5 @@
-// TechnalAzi base script
-// No tracking, no invasive scripts
-
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("TechnalAzi website loaded");
-});
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://technalazi.netlify.app/</loc></url>
+  <url><loc>https://technalazi.netlify.app/thank-you.html</loc></url>
+</urlset>

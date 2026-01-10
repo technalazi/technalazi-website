@@ -1,149 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>TechnalAzi — Policy-Aligned Platform Support</title>
-
-<style>
-:root{
-  --navy:#0b1c2d;
-  --blue:#0f2f4f;
-  --soft:#eef4fb;
-  --card:#ffffff;
-  --accent1:#ff7a18;
-  --accent2:#ff9f1c;
-  --text:#0f172a;
-}
-
-*{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,Arial,sans-serif;}
-body{background:var(--soft);color:var(--text);line-height:1.6}
-
-/* ---------- UTIL ---------- */
-.center{text-align:center}
-.container{max-width:1150px;margin:auto;padding:64px 16px}
-
-/* ---------- SECTION TITLES ---------- */
-.section-title{
-  font-size:32px;
-  font-weight:800;
-  letter-spacing:-0.4px;
-  margin-bottom:28px;
-}
-.dark .section-title{color:#fff}
-@media(max-width:768px){.section-title{font-size:26px}}
-
-/* ---------- HERO ---------- */
-.hero{
-  background:linear-gradient(135deg,var(--navy),var(--blue));
-  color:#fff;
-  padding:90px 16px;
-}
-.hero img{width:120px;margin-bottom:14px}
-.hero h1{font-size:34px;font-weight:800}
-.hero p{opacity:.9;margin-top:8px}
-.hero .cta{
-  margin-top:22px;
-  background:linear-gradient(135deg,var(--accent1),var(--accent2));
-  color:#fff;
-  padding:14px 28px;
-  border:none;border-radius:999px;
-  font-weight:700;
-  cursor:pointer;
-}
-.hero .meta{
-  margin-top:14px;
-  font-size:14px;
-  opacity:.85;
-}
-.badges{margin-top:14px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.badges span{
-  background:rgba(255,255,255,.1);
-  padding:6px 14px;border-radius:999px;font-size:13px
-}
-
-/* ---------- CARDS ---------- */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{
-  background:var(--card);
-  border-radius:14px;
-  padding:22px;
-  box-shadow:0 12px 30px rgba(0,0,0,.05);
-}
-.card h3{font-size:17px;font-weight:700;margin-bottom:6px}
-
-/* ---------- DARK SECTION ---------- */
-.dark{background:linear-gradient(135deg,#081422,#0b1c2d);color:#fff}
-
-/* ---------- CONTACT ---------- */
-.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-@media(max-width:900px){.contact-wrap{grid-template-columns:1fr}}
-input,textarea{
-  width:100%;
-  padding:14px 16px;
-  border-radius:12px;
-  border:1px solid #e2e8f0;
-  font-size:15px;
-}
-textarea{
-  min-height:130px;
-  resize:none;
-  line-height:1.6;
-}
-.send-btn{
-  margin-top:14px;
-  background:linear-gradient(135deg,var(--accent1),var(--accent2));
-  color:#fff;border:none;
-  padding:14px;border-radius:999px;
-  font-weight:700;width:100%;
-}
-
-/* ---------- FAQ ---------- */
-.faq p{margin-bottom:14px}
-
-/* ---------- FOOTER ---------- */
-footer{
-  background:#020617;
-  color:#cbd5f5;
-  text-align:center;
-  padding:18px;
-  font-size:14px;
-}
-footer a{color:#cbd5f5;text-decoration:none}
-
-/* ---------- CHAT BUTTON ---------- */
-.chat-float{
-  position:fixed;
-  right:18px;
-  bottom:80px;
-  background:#25D366;
-  width:56px;height:56px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-size:26px;
-  z-index:999;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>TechnalAzi — Policy-Aligned Recovery & Monetization Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ethical, policy-aligned support for Facebook, Instagram, YouTube & Google issues. No passwords. No shortcuts.">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- HERO -->
-<section class="hero center">
-  <img src="logo.png" alt="TechnalAzi"/>
+<section class="hero">
+  <img src="logo.png" alt="TechnalAzi Logo" class="logo">
+
   <h1>TechnalAzi</h1>
-  <p><strong>Policy-Aligned Recovery & Monetization Support</strong></p>
+  <h2>Policy-Aligned Recovery & Monetization Support</h2>
   <p>For Facebook, Instagram, YouTube & Google</p>
 
-  <button class="cta">🔍 Submit Issue for Policy Review</button>
+  <a href="#contact" class="cta-btn">🔍 Review My Case</a>
 
-  <div class="meta">
+  <p class="hero-note">
     Initial assessment and resolution depend on issue type, platform procedures,
     server response, and reviewer availability.
-  </div>
+  </p>
 
   <div class="badges">
     <span>🤝 Your Trusted Partner</span>
@@ -153,87 +33,94 @@ footer a{color:#cbd5f5;text-decoration:none}
 </section>
 
 <!-- SERVICES -->
-<section class="container">
-  <h2 class="section-title center">✨ Our Services</h2>
-  <div class="grid">
-    <div class="card"><h3>🛡 Account & Page Review</h3>Professional review of restricted or limited accounts.</div>
-    <div class="card"><h3>💰 Monetization Eligibility Guidance</h3>Guidance for ads, bonuses, and monetization issues.</div>
-    <div class="card"><h3>✅ Verification Support</h3>Support for page or business verification delays.</div>
-    <div class="card"><h3>⚠ Policy Risk Assessment</h3>Risk evaluation to prevent future restrictions.</div>
-    <div class="card"><h3>🧾 Appeal & Review Strategy</h3>Ethical appeal guidance under official processes.</div>
-    <div class="card"><h3>🧠 Long-Term Platform Safety Planning</h3>Strategic planning for long-term compliance.</div>
+<section class="section light">
+  <h2>✨ Our Services</h2>
+
+  <div class="service-grid">
+    <div class="card">🛡️ <strong>Account & Page Review</strong><br>Restricted or limited accounts.</div>
+    <div class="card">💰 <strong>Monetization Eligibility</strong><br>Ads & bonuses guidance.</div>
+    <div class="card">✅ <strong>Verification Support</strong><br>Page & business verification.</div>
+
+    <div class="card">⚠️ <strong>Policy Risk Assessment</strong><br>Prevent future restrictions.</div>
+    <div class="card">📄 <strong>Appeal Strategy</strong><br>Ethical policy appeals.</div>
+    <div class="card">🧠 <strong>Long-Term Safety</strong><br>Compliance planning.</div>
   </div>
 </section>
 
-<!-- WHY -->
-<section class="container">
-  <h2 class="section-title center">💡 Why TechnalAzi</h2>
-  <div class="grid">
-    <div class="card">🔐 Policy-first consulting approach</div>
-    <div class="card">🧠 Experience-based guidance</div>
-    <div class="card">🧾 Transparent and honest communication</div>
-    <div class="card">🌍 Global platform understanding</div>
-    <div class="card">🚫 We never request passwords or verification codes</div>
-    <div class="card">🤝 Long-term, ethical support mindset</div>
+<!-- WHY TECHNALAZI (FIXED 3–3) -->
+<section class="section light">
+  <h2>💡 Why TechnalAzi</h2>
+
+  <div class="why-grid">
+    <div class="why-card">🧠 Policy-first consulting</div>
+    <div class="why-card">📊 Experience-based guidance</div>
+    <div class="why-card">🔍 Transparent communication</div>
+
+    <div class="why-card">🌍 Global platform understanding</div>
+    <div class="why-card">🚫 No passwords or codes ever</div>
+    <div class="why-card">🛠️ Long-term ethical mindset</div>
   </div>
 </section>
 
 <!-- PROCESS -->
-<section class="dark container center">
-  <h2 class="section-title">🧭 How Our Review Process Works</h2>
-  <p>1. Eligibility review based on basic details only.</p>
-  <p>2. Policy evaluation conducted under official platform rules.</p>
-  <p>3. Clear and honest outcome shared before any payment.</p>
-  <p>4. Ethical guidance provided for eligible cases.</p>
+<section class="section dark">
+  <h2>🧭 How Our Review Process Works</h2>
+  <ol>
+    <li>Eligibility review based on basic details only.</li>
+    <li>Policy evaluation under official platform rules.</li>
+    <li>Clear and honest outcome before any payment.</li>
+    <li>Ethical guidance for eligible cases.</li>
+  </ol>
 </section>
 
 <!-- CONTACT -->
-<section class="container">
-  <h2 class="section-title center">📩 Contact Us</h2>
+<section class="section light" id="contact">
+  <h2>📩 Contact Us</h2>
 
-  <div class="contact-wrap">
-    <div class="card">
-      <p>📧 <strong>Email</strong><br/>contact.technalazi@gmail.com</p><br/>
-      <p>💬 <strong>WhatsApp</strong><br/>+880 1770-209663<br/><small>For contact & deal-related communication only</small></p><br/>
-      <p>📘 <strong>Facebook Page</strong><br/>facebook.com/technalazi</p>
+  <div class="contact-grid">
+
+    <div class="contact-info">
+      <p>📧 <strong>Email</strong><br>contact.technalazi@gmail.com</p>
+      <p>📱 <strong>WhatsApp</strong><br>+880 1770-209663<br><small>For contact & deal-related communication only</small></p>
+      <p>📘 <strong>Facebook Page</strong><br>facebook.com/technalazi</p>
     </div>
 
-    <div class="card">
-      <input placeholder="Your Name"/>
-      <input style="margin-top:10px" placeholder="Your Email"/>
-      <textarea style="margin-top:10px" placeholder="Briefly describe your issue (platform, page or channel link, and the problem)"></textarea>
-      <button class="send-btn">Send Message</button>
-      <p style="margin-top:8px;font-size:13px;opacity:.7">We never request passwords, verification codes, or private access.</p>
-    </div>
+    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Briefly describe your issue (platform, page or channel link, and the problem)" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p class="note">We never request passwords, verification codes, or private access.</p>
+    </form>
+
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="container faq center">
-  <h2 class="section-title">❓ Frequently Asked Questions</h2>
+<section class="section light">
+  <h2>❓ Frequently Asked Questions</h2>
 
-  <p><strong>Is this a guaranteed recovery service?</strong><br/>
-  No. We provide guidance only. Final decisions are made by the platforms.</p>
-
-  <p><strong>Is TechnalAzi safe and legitimate?</strong><br/>
-  Yes. We operate transparently and follow official platform policies.</p>
-
-  <p><strong>Do I need to share login details?</strong><br/>
-  No. We never request sensitive access.</p>
-
-  <p><strong>How long does the process take?</strong><br/>
-  Timelines vary depending on issue complexity, platform procedures, and response cycles.</p>
-
-  <p><strong>Who should not use this service?</strong><br/>
-  Anyone seeking hacks, shortcuts, or guaranteed approvals.</p>
+  <div class="faq">
+    <p><strong>Is this a guaranteed recovery service?</strong><br>No. Final decisions are made by platforms.</p>
+    <p><strong>Is TechnalAzi legitimate?</strong><br>Yes. We follow official platform policies.</p>
+    <p><strong>Do I need to share login details?</strong><br>No. Never.</p>
+    <p><strong>How long does the process take?</strong><br>Timelines vary by case complexity and platform procedures.</p>
+    <p><strong>Who should not use this service?</strong><br>Anyone seeking hacks or guaranteed approvals.</p>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-© TechnalAzi | All Rights Reserved <br/>
-<a href="#">Privacy Policy</a> · <a href="#">Terms & Conditions</a>
+  <p>© TechnalAzi | All Rights Reserved</p>
+  <p><a href="#">Privacy Policy</a> · <a href="#">Terms & Conditions</a></p>
 </footer>
 
-<a class="chat-float" href="https://wa.me/8801770209663">💬</a>
+<!-- CHAT BUTTON -->
+<a class="chat-float" href="https://wa.me/8801770209663" aria-label="Chat on WhatsApp">💬</a>
 
+<script src="script.js"></script>
 </body>
 </html>
