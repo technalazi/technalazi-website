@@ -1,81 +1,135 @@
-*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto}
-body{margin:0;background:#eef5fb;color:#0f172a}
-a{text-decoration:none;color:#2563eb}
-
-/* HERO */
-.hero{
-  background:linear-gradient(135deg,#071b34,#0b2a4a);
-  color:#fff;text-align:center;padding:60px 20px
-}
-.logo{width:80px}
-.cta{
-  display:inline-block;margin:20px auto;
-  background:linear-gradient(90deg,#ff8a00,#ffb347);
-  color:#fff;padding:14px 28px;border-radius:30px;font-weight:600
-}
-.badges span{
-  display:inline-block;background:#ffffff1a;
-  margin:6px;padding:6px 12px;border-radius:20px;font-size:13px
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* SECTIONS */
-.section{padding:50px 20px;text-align:center}
-.section.light{background:#eef5fb}
-.section.dark{background:linear-gradient(135deg,#071b34,#0b2a4a);color:#fff}
-
-/* GRIDS */
-.grid,.why-grid{
-  display:grid;gap:16px;max-width:1000px;margin:0 auto
-}
-.grid{grid-template-columns:repeat(3,1fr)}
-.why-grid{grid-template-columns:repeat(3,1fr)}
-.card,.why-card{
-  background:#fff;padding:18px;border-radius:14px;
-  box-shadow:0 8px 18px rgba(0,0,0,.06)
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1f2937;
 }
 
-/* PROCESS */
-.center-list{max-width:700px;margin:0 auto;text-align:left}
-
-/* CONTACT */
-.contact-grid{
-  display:grid;grid-template-columns:1fr 1fr;
-  gap:20px;max-width:1000px;margin:0 auto
-}
-.contact-info{text-align:left}
-form input,form textarea{
-  width:100%;padding:12px;margin-bottom:10px;
-  border-radius:10px;border:1px solid #cbd5e1
-}
-form button{
-  width:100%;padding:14px;border:none;
-  border-radius:30px;background:linear-gradient(90deg,#ff8a00,#ffb347);
-  color:#fff;font-weight:600
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
 }
 
-/* FAQ */
-.faq{max-width:700px;margin:0 auto;text-align:center}
-
-/* FOOTER */
-footer{
-  background:#071b34;color:#fff;text-align:center;padding:20px
-}
-footer a{color:#cbd5e1}
-
-/* CHAT */
-.chat-btn{
-  position:fixed;bottom:20px;right:20px;
-  background:#25d366;color:#fff;
-  width:56px;height:56px;border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:24px;box-shadow:0 8px 20px rgba(0,0,0,.25)
+.logo {
+  width: 70px;
+  margin-bottom: 10px;
 }
 
-/* RESPONSIVE */
-@media(max-width:900px){
-  .grid,.why-grid{grid-template-columns:repeat(2,1fr)}
-  .contact-grid{grid-template-columns:1fr}
+.subtitle {
+  font-size: 18px;
+  opacity: 0.9;
 }
-@media(max-width:520px){
-  .grid,.why-grid{grid-template-columns:1fr}
+
+.platforms {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.btn {
+  display: inline-block;
+  margin: 25px 0;
+  padding: 14px 28px;
+  background: #f59e0b;
+  color: #111;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-note {
+  font-size: 13px;
+  opacity: 0.7;
+  max-width: 520px;
+  margin: auto;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section.light {
+  background: #ffffff;
+}
+
+.section.dark {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  font-size: 14px;
+}
+
+.dark .card {
+  background: #1e293b;
+}
+
+.contact-box p {
+  margin: 6px 0;
+}
+
+form {
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #f59e0b;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.security-note,
+.contact-note {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+footer {
+  background: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 13px;
+}
+
+footer a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.disclaimer {
+  opacity: 0.75;
+  margin-bottom: 10px;
 }
